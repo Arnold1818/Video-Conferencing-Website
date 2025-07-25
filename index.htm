@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>l i n k O n e</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/w3.css">
+  <link rel="icon" type="image/x-icon" href="images/tbarlogo.png">
+</head>
+
+<body class="w3-black">
+  <div class="w3-panel">
+    <img src="images/logoo.png" alt="linkOne" width="130px" height="35px">
+  </div>
+
+  <div>
+    <video autoplay muted loop width="100%" height="400px">
+      <source src="video/video.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="w3-panel w3-center">
+    <p class="w3-jumbo">Let's Connect!</p>
+    <p class="w3-text-grey w3-large">
+      Welcome to the platform where you can connect to anyone in the world.<br>
+      Our linkOne team provides you free service for flexible video conferencing meetings.
+    </p>
+
+
+
+    <!--  ----------------------------------  SIGN UP/ Join meeting ----------------------------------------------------------------------->
+    <button onclick="document.getElementById('id01').style.display='block'"
+      class="w3-button w3-blue w3-ripple w3-animate-zoom">Join with meetingId</button>
+    <div id="id01" class="w3-modal">
+      <div class="w3-modal-content w3-card-4 w3-animate-zoom w3-black" style="max-width:600px">
+
+        <div class="w3-center"><br>
+          <span onclick="document.getElementById('id01').style.display='none'"
+            class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+          <img src="images/logo.png" alt="Avatar" style="width:30%">
+        </div>
+
+        <!-- <form class="w3-container" action="/action_page.php"> -->
+        <div class="w3-section">
+          <!-- <label><b>Email</b></label> -->
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter meetingId" id="meetingId"
+            required>
+          <!-- <label><b>Password</b></label>
+            <input class="w3-input w3-border" type="password" placeholder="Enter Password" name="psw" required>
+            <label><b>Re-enter password</b></label>
+            <input class="w3-input w3-border" type="password" placeholder="Re-enter Password" name="rpsw" required> -->
+          <button onclick="joinMeeting(); document.getElementById('id01').style.display='none'"
+            class="w3-button w3-block w3-blue w3-section w3-padding">Join</button>
+          <!-- <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Remember me -->
+        </div>
+        <!-- </form> -->
+
+        <div class="w3-container w3-border-top w3-padding-16 w3-black">
+          <button onclick="document.getElementById('id01').style.display='none'" type="button"
+            class="w3-button w3-red w3-left">Cancel</button>
+          <!-- <span class="w3-right w3-padding w3-hide-small">Forgot <a href="#">password?</a></span> -->
+        </div>
+
+      </div>
+    </div>
+    <!-- *******************************************************************************************************************************************************-->
+
+
+    <button onclick="newMeeting()" class="w3-button w3-blue w3-ripple w3-animate-zoom">New Meeting</button>
+  </div>
+
+  <script src="js/newmeet.js"></script>
+  <script src="js/join.js"></script>
+
+
+</body>
+
+</html>
